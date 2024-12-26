@@ -171,5 +171,28 @@
     </form>
     <p class="text">Already have an account? <a href="login.html">Sign in</a></p>
   </div>
+
+  <script>
+    function handleSignup(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+  
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+  
+      // Save user data in localStorage
+      localStorage.setItem("user", JSON.stringify({ name, email, password }));
+      alert("Signup successful!");
+      window.location.href = "/login.html"; // Redirect to login page
+    }
+  </script>
+  
+  
 </body>
 </html>
+

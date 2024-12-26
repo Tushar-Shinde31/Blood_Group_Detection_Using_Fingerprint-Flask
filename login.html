@@ -150,11 +150,30 @@
     </form>
   </div>
 
-  <script>
+  <!-- <script>
     document.getElementById("login-form").addEventListener("submit", function (e) {
       e.preventDefault();
       alert("Login Attempted: Authentication needs to be implemented.");
     });
-  </script>
+  </script> -->
+
+<script>
+  document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (user && user.email === email && user.password === password) {
+      // alert("Login successful!");
+      window.location.href = "/index.html"; // Redirect to home page
+    } else {
+      alert("Invalid email or password!");
+    }
+  });
+</script>
+
 </body>
 </html>
+
