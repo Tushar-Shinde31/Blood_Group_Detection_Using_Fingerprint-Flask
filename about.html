@@ -46,31 +46,174 @@
       </section>
 
       <!-- Methodology Section -->
-      <section id="methodology" class="min-h-screen py-20 px-6 bg-gray-100">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-6">Methodology</h2>
-          <div class="prose lg:prose-xl">
-            <p class="mb-6">Our innovative approach to blood group detection utilizes advanced image processing and machine learning techniques to analyze fingerprint patterns. This methodology has shown promising results in preliminary studies, offering a non-invasive alternative to traditional blood typing methods.</p>
-            <h3 class="text-xl font-semibold mb-4">Key Features:</h3>
-            <ul class="list-disc pl-6 space-y-2 mb-6">
-              <li>Non-invasive blood type detection</li>
-              <li>Advanced pattern recognition algorithms</li>
-              <li>Machine learning-based analysis</li>
-              <li>Real-time processing capabilities</li>
-              <li>High accuracy rate in controlled studies</li>
-            </ul>
-            <h3 class="text-xl font-semibold mb-4">Process Overview:</h3>
-            <ul class="list-decimal pl-6 space-y-2">
-              <li>Fingerprint image acquisition</li>
-              <li>Image preprocessing and enhancement</li>
-              <li>Feature extraction and analysis</li>
-              <li>Pattern matching with database</li>
-              <li>Blood group prediction</li>
-            </ul>
+       <section id="methodology">
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          color: #333;
+          margin: 0;
+          padding: 0;
+          line-height: 1.6;
+        }
+    
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+    
+        .title {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+    
+        .subtitle {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+    
+        .description {
+          color: #666;
+          margin-bottom: 30px;
+        }
+    
+        .heart-icon {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 30px;
+          color: red;
+        }
+    
+        .heart-icon svg {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .heart-icon .pulse {
+          position: absolute;
+          width: 100%;
+          height: 5px;
+          background-color: white;
+          animation: pulse 1s infinite;
+        }
+    
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+    
+        .steps {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 15px;
+          margin-bottom: 30px;
+        }
+    
+        .step {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #555;
+        }
+    
+        .step span {
+          font-weight: bold;
+          color: #007bff;
+        }
+    
+        .stats {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+        }
+    
+        .stat {
+          text-align: center;
+          color: #555;
+        }
+    
+        .stat-icon {
+          color: #007bff;
+          font-size: 2rem;
+          margin-bottom: 10px;
+        }
+    
+        .stat-value {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+    
+        .stat-label {
+          font-size: 0.9rem;
+          color: #777;
+        }
+      </style>
+    </head>
+    <>
+      <div class="container">
+        <h1 class="title">Methodology</h1>
+    
+        <p class="description">
+          Blood group detection using fingerprints through deep learning is an innovative approach that leverages advancements in image processing and machine learning to predict an individual's blood group based on their fingerprint patterns. Traditional methods of blood group detection involve blood sample analysis, which can be invasive, time-consuming, and require specialized equipment. This novel methodology aims to provide a non-invasive, rapid, and accessible alternative by analyzing the unique features of fingerprints.
+        </p>
+    
+        <!-- <div class="heart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+          <div class="pulse"></div>
+        </div> -->
+    
+        <h2 class="subtitle">Steps Involved</h2>
+        <p class="description">Following Steps Involved in the Development:</p>
+        <div class="steps">
+          <div class="step"><span>&#8250;</span> Dataset: <span>8000</span></div>
+          <!-- <div class="step"><span>&#8250;</span> Data Preprocessing: <span>Normalization with OpenCV</span></div> -->
+          <div class="step"><span>&#8250;</span> Training Model: <span>CNN pre trained model vgg-16</span></div>
+          <div class="step"><span>&#8250;</span> Testing Model: <span>CNN pre trained model vgg-16</span></div>
+          <div class="step"><span>&#8250;</span> Optimizer: <span>Adam Optimizer</span></div>
+          <div class="step"><span>&#8250;</span> FrontEnd: <span>Flask with Python</span></div>
+          <div class="step"><span>&#8250;</span> Backend: <span>Flask</span></div>
+          <div class="step"><span>&#8250;</span> Accuracy: <span>89%</span></div>
+        </div>
+    
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-icon">&#128200;</div>
+            <div class="stat-value">89%</div>
+            <div class="stat-label">Accuracy</div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">&#128202;</div>
+            <div class="stat-value">8000</div>
+            <div class="stat-label">Dataset Size</div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">&#128187;</div>
+            <div class="stat-value">15</div>
+            <div class="stat-label">Epochs</div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">&#128736;</div>
+            <div class="stat-value">1</div>
+            <div class="stat-label">Training Loss</div>
           </div>
         </div>
-      </section>
-
+      </div>
+    </section>
+    
      <!-- Dataset Section -->
 <section id="dataset" class="min-h-screen py-20 px-6">
     <div class="max-w-6xl mx-auto">
