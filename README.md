@@ -1,6 +1,6 @@
 # Blood Group Detection Using Fingerprint (BGDUF)
 
-(![Screenshot (272)](https://github.com/user-attachments/assets/0898b228-958f-4ec3-bf18-c026f8b5ebe6)
+![Screenshot (272)](https://github.com/user-attachments/assets/0898b228-958f-4ec3-bf18-c026f8b5ebe6)
 
 A machine learning-based application that predicts blood groups using fingerprint images. The project is built with **Flask** for the backend and integrates a **TensorFlow (Keras) model** with an accuracy of **89%**.
 
