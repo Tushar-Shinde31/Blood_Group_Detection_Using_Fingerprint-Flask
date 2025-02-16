@@ -36,7 +36,7 @@ The dataset consists of fingerprint images labeled with their corresponding **AB
 ### 🔹 Predicting Result Page
 ![Screenshot (277)](https://github.com/user-attachments/assets/30f9a4ad-fb25-4ab5-9ea0-95385f2735a7)
 
-![Prediction Result](![Screenshot (276)](https://github.com/user-attachments/assets/0ee143a2-b03c-4824-a67d-9b4c3a96bdd0)
+![Screenshot (276)](https://github.com/user-attachments/assets/0ee143a2-b03c-4824-a67d-9b4c3a96bdd0)
 
 ## 📊 Model Performance
 | Metric            | VGG16  | AlexNet | ResNet50 | Hybrid Model |
