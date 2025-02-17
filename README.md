@@ -24,7 +24,7 @@ A machine learning-based application that predicts blood groups using fingerprin
 - NumPy
 
 ## 📂 Dataset Overview
-(![Screenshot (274)](https://github.com/user-attachments/assets/55c0365d-ace9-48d4-8ea0-3dc4f2664431)
+![Screenshot (274)](https://github.com/user-attachments/assets/55c0365d-ace9-48d4-8ea0-3dc4f2664431)
 
 The dataset consists of fingerprint images labeled with their corresponding **ABO/Rh blood groups**. **Data preprocessing** included **normalization and resizing** before training the model.
 
