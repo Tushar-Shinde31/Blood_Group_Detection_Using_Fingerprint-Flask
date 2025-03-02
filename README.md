@@ -23,6 +23,19 @@ A machine learning-based application that predicts blood groups using fingerprin
 - Pillow (PIL)
 - NumPy
 
+## 📂 Dataset  
+You can access the **Fingerprint Blood Group Dataset** used in this project here:  
+[🔗 Fingerprint Dataset]https://drive.google.com/drive/folders/1Y57vhyVfkDIjUTdhx9KH784glAziWgbD?usp=sharing
+
+## 📑 Deep Learning Models  
+The repository includes multiple model architectures in **PDF format**:  
+- **AlexNet** (`alexnet.pdf`)  
+- **SVM** (`svm.pdf`)  
+- **ResNet50** (`resnet50.pdf`)  
+- **VGG** (`vgg.pdf`)  
+- **Main Model:** [`vggmodel.ipynb`](vggmodel.ipynb)  
+
+
 ## 📂 Dataset Overview
 ![Screenshot (274)](https://github.com/user-attachments/assets/55c0365d-ace9-48d4-8ea0-3dc4f2664431)
 
