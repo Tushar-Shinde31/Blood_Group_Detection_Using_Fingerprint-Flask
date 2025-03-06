@@ -45,7 +45,7 @@ This project introduces a non-invasive approach to blood group prediction using 
 - Experiment with other models for further accuracy improvements.
 - Deploy model in live environment
 
-## Contact  
+### Contact  
 #### Tushar Shinde  
 Email: [tusharshinde2250@gmail.com](mailto:tusharshinde2250@gmail.com)  
 [LinkedIn](https://www.linkedin.com/in/tushar-shinde-262335257/)
