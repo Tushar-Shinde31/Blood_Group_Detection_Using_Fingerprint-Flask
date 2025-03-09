@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Group Detector</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.245.3/dist/umd/lucide.js"></script>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+
+
+  <style>
+    .dark-mode {
+      --bg-color: #1a202c;
+      --text-color: white;
+    }
+    body.dark-mode {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-purple-200 backdrop-blur-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-2">
+          <i data-lucide="heart" class="text-red-500" size="24"></i>
+          <span class="font-bold text-xl text-purple-900">Blood Group Detector</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/index.html" class="text-purple-900 hover:text-purple-700 transition-colors">Home</a>
+          <a href="/about.html" class="text-purple-900 hover:text-purple-700 transition-colors">About</a>
+          <a href="/login.html" class="text-purple-900 hover:text-purple-700 transition-colors">Login</a>
+          <a href="/signup.html" class="text-purple-900 hover:text-purple-700 transition-colors">Sign Up</a>
+          <button class="px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors">
+            Get Started
+          </button>
+          <button id="darkModeToggle" class="p-2 rounded-full hover:bg-gray-200/20">
+            <i id="darkModeIcon" data-lucide="moon" size="20"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+ <!-- Hero Section -->
+<div class="relative min-h-screen pt-16">
+  <img
+    src="https://images.unsplash.com/photo-1579165466741-7f35e4755660"
+    alt="Laboratory"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <!-- Updated Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/90 to-black/70"></div>
+  <div class="relative pt-32 px-4 max-w-7xl mx-auto text-center text-white">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+      Blood Group Detection
+      <br />
+      Using Fingerprint
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 opacity-90">
+      Revolutionary technology for non-invasive blood type identification
+    </p>
+    <button 
+      class="px-8 py-4 bg-purple-500 hover:bg-purple-600 rounded-lg text-lg font-semibold transition-colors"
+      onclick="document.getElementById('imageUpload').scrollIntoView({ behavior: 'smooth' })">
+      Try it Now
+    </button>    
+  </div>
+</div>
+
+  <!-- Features Section -->
+  <section class="py-20 px-4 bg-gray-700 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class=" dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="fingerprint" class="w-12 h-12 text-purple-500"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-white dark:text-white">
+            Step 1: Upload Fingerprint
+          </h3>
+          <p class="text-white dark:text-gray-300">
+           Choose a clear fingerprint image to analyze your blood group
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class=" dark:bg-gray-700 p-8 rounded-lg shadow-lg text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="droplets" class="w-12 h-12 text-purple-500"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-white dark:text-white">
+            Step 2: Submit the Image
+          </h3>
+          <p class="text-white dark:text-gray-300">
+            Our CNN based model analyze the fingerprint
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class=" dark:bg-gray-700 p-8 rounded-lg shadow-lg text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="clock" class="w-12 h-12 text-purple-500"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-white dark:text-white">
+            Get Prediction
+          </h3>
+          <p class="text-white dark:text-gray-300">
+            Recieve your blood group prediction in seconds
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Image Upload Section -->
+   <section id ="imageUpload">
+  <section class="bg-gray-900 py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-white">Upload Your Fingerprint</h2>
+      <p class="text-white dark:text-gray-300 mb-8">
+        Upload a clear fingerprint image to detect your blood group using our advanced technology
+      </p>
+      <!-- Image Preview Section -->
+      <div class="flex flex-col items-center justify-center p-6 rounded-md shadow-lg mt-10">
+        <h2 class="text-2xl font-semibold mb-4 text-purple-700">Predict Blood Group</h2>
+        <!-- Image Preview Box -->
+        <div
+          id="imagePreview"
+          class="relative w-40 h-40 mb-4 border border-dashed border-purple-500 rounded-md flex items-center justify-center overflow-hidden bg-gray-100"
+        >
+          <p id="noImageText" class="text-gray-400">No Image Selected</p>
+          <img
+            id="previewImage"
+            src=""
+            alt="Uploaded fingerprint preview"
+            class="hidden w-full h-full object-cover"
+          />
+        </div>
+        <!-- File Upload Button -->
+        <label
+          for="fileInput"
+          class="cursor-pointer bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mb-3"
+        >
+          Choose Image
+        </label>
+        <input
+          id="fileInput"
+          type="file"
+          accept="image/*"
+          onchange="handleImageChange(event)"
+          class="hidden"
+        />
+        <!-- Predict Button -->
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg">
+          Predict Blood Group
+        </button>
+      </div>
+    </div>
+  </section>
+</section>
+  
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-4">
+          <h3 class="font-bold text-lg">Blood Group Detector</h3>
+          <p class="text-sm opacity-70">
+            Revolutionary technology for non-invasive blood type detection using fingerprint analysis.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="opacity-70 hover:opacity-100">Home</a></li>
+            <li><a href="#about" class="opacity-70 hover:opacity-100">About</a></li>
+            <li><a href="#try" class="opacity-70 hover:opacity-100">Try Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="opacity-70 hover:opacity-100">Documentation</a></li>
+            <li><a href="#" class="opacity-70 hover:opacity-100">Research</a></li>
+            <li><a href="#" class="opacity-70 hover:opacity-100">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Connect</h3>
+          <div class="flex gap-4">
+            <a href="#" class="opacity-70 hover:opacity-100"><i data-lucide="github" class="w-6 h-6"></i></a>
+            <a href="#" class="opacity-70 hover:opacity-100"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            <a href="#" class="opacity-70 hover:opacity-100"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <>
+  <script>
+  function handleImageChange(event) {
+    const fileInput = event.target;
+    const previewImage = document.getElementById("previewImage");
+    const noImageText = document.getElementById("noImageText");
+
+    if (fileInput.files && fileInput.files[0]) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        previewImage.src = e.target.result;
+        previewImage.classList.remove("hidden");
+        noImageText.classList.add("hidden");
+      };
+
+      reader.readAsDataURL(fileInput.files[0]);
+    } else {
+      previewImage.src = "";
+      previewImage.classList.add("hidden");
+      noImageText.classList.remove("hidden");
+    }
+  }
+
+    lucide.createIcons();
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    let isDarkMode = false;
+
+    darkModeToggle.addEventListener('click', () => {
+      isDarkMode = !isDarkMode;
+      document.body.classList.toggle('dark-mode');
+      darkModeIcon.setAttribute('data-lucide', isDarkMode ? 'sun' : 'moon');
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
