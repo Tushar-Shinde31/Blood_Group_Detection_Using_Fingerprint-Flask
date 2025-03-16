@@ -36,7 +36,9 @@ This project introduces a non-invasive approach to blood group prediction using 
 ### Dataset 
 [Fingerprint-dataset](https://www.kaggle.com/datasets/rajumavinmar/finger-print-based-blood-group-dataset)
 
-![Screenshot 2025-03-05 002114](https://github.com/user-attachments/assets/764ddf3e-9f88-4734-802e-0e8d0f25f58d
+##Dataset Overview:
+![dataset](https://github.com/user-attachments/assets/ccc93bf9-f1b4-490f-9767-aeca4800e98a)
+
 
 ### Screenshots
 #### Signup Page
@@ -44,8 +46,9 @@ This project introduces a non-invasive approach to blood group prediction using 
 
 #### Predicting Result Page
 ![Screenshot 2025-03-05 223335](https://github.com/user-attachments/assets/b5701d15-8837-46b8-aa13-c200625b0d35)
-![Screenshot 2025-03-05 223538](https://github.com/user-attachments/assets/40453f3f-d631-424b-82df-258843e445d8)
-![Screenshot 2025-03-05 223633](https://github.com/user-attachments/assets/63c77e96-f082-4c9c-9f53-02cf3b76cd3b)
+![prediction](https://github.com/user-attachments/assets/4076fbbe-de88-46a6-b4fc-209da889158c)
+![upload](https://github.com/user-attachments/assets/3ba4768c-b462-46ab-aaf9-680808f344ec)
+
 
 ###  Future Improvements
 - Expand the dataset for better generalization.
