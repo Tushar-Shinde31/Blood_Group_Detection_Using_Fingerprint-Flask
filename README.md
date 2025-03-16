@@ -3,7 +3,8 @@
 ###  Project Overview
 This project introduces a non-invasive approach to blood group prediction using fingerprint image processing and machine learning. By leveraging Convolutional Neural Networks (CNNs), it classifies fingerprint patterns into eight common blood groups (A+, A-, B+, B-, AB+, AB-, O+, O-), offering a quick and accessible alternative to traditional methods.  
 
-![Screenshot 2025-03-05 001626](https://github.com/user-attachments/assets/486dad12-1b91-434b-963e-1f97e7acbb46)
+![home](https://github.com/user-attachments/assets/f3ebff6d-3e83-4234-bc3b-4344ed8f1348)
+
 
 ### Objectives
 -Rapid Blood Group Identification – Provides a fast and accurate alternative to traditional methods.
@@ -33,9 +34,9 @@ This project introduces a non-invasive approach to blood group prediction using 
 | Hybrid Model (EfficientNetB0 + SVM)  | 22.29%          | 22.81%              
 
 ### Dataset 
-[Fingerprint-dataset](https://www.kaggle.com/datasets/rajumavinmar/finger-print-based-blood-group-dataset) 
+[Fingerprint-dataset](https://www.kaggle.com/datasets/rajumavinmar/finger-print-based-blood-group-dataset)
 
-![Screenshot 2025-03-05 002114](https://github.com/user-attachments/assets/764ddf3e-9f88-4734-802e-0e8d0f25f58d)
+![Screenshot 2025-03-05 002114](https://github.com/user-attachments/assets/764ddf3e-9f88-4734-802e-0e8d0f25f58d
 
 ### Screenshots
 #### Signup Page
