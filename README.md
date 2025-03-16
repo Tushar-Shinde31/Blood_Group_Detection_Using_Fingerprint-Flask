@@ -1,90 +1,61 @@
-# Blood Group Detection Using Fingerprint (BGDUF)
+# blood-group-prediction-using-fingerprint
 
-![Screenshot (272)](https://github.com/user-attachments/assets/0898b228-958f-4ec3-bf18-c026f8b5ebe6)
+###  Project Overview
+This project introduces a non-invasive approach to blood group prediction using fingerprint image processing and machine learning. By leveraging Convolutional Neural Networks (CNNs), it classifies fingerprint patterns into eight common blood groups (A+, A-, B+, B-, AB+, AB-, O+, O-), offering a quick and accessible alternative to traditional methods.  
 
-A machine learning-based application that predicts blood groups using fingerprint images. The project is built with **Flask** for the backend and integrates a **TensorFlow (Keras) model** with an accuracy of **89%**.
+![Screenshot 2025-03-05 001626](https://github.com/user-attachments/assets/486dad12-1b91-434b-963e-1f97e7acbb46)
 
-## 🚀 Features
-- Upload fingerprint images to predict blood groups.
-- User authentication and database management using Flask SQLAlchemy.
-- Model trained using deep learning (CNN - VGG16).
-- Dataset stored and managed using SQLite.
-- Frontend built with **HTML, CSS, and JavaScript**.
+### Objectives
+-Rapid Blood Group Identification – Provides a fast and accurate alternative to traditional methods.
 
-## 🛠 Tech Stack
-### Frontend:
+-Accessibility in Remote Areas – Enables blood group prediction without lab facilities or skilled personnel.
+
+-Integration with Portable Devices – Supports point-of-care diagnostics in clinics and mobile units.
+
+-Safety and Scalability – Reduces contamination risks and ensures adaptability across healthcare settings.
+
+-Biometric and Medical Synergy – Combines biometrics and machine learning for improved diagnostics.
+  
+### Tech Stack
+#### Frontend: 
 - HTML, CSS, JavaScript
+#### Backend: 
+- Flask, SQLAlchemy, SQLite
+#### Machine Learning (Model Development): 
+- TensorFlow/Keras,  Google Colab
 
-### Backend:
-- Flask (Python)
-- Flask SQLAlchemy
-- SQLite
-- TensorFlow (Keras)
-- Pillow (PIL)
-- NumPy
+### Model Performance
+| Model                                | Testing Accuracy | Validation Accuracy |
+|--------------------------------------|-----------------|---------------------|
+| VGG16                                | 88.72%          | 89.50%              | 
+| AlexNet                              | 12.47%          | 12.49%              | 
+| ResNet50                             | 61.19%          | 62.70%              |
+| Hybrid Model (EfficientNetB0 + SVM)  | 22.29%          | 22.81%              
 
+### Dataset 
+[Fingerprint-dataset](https://www.kaggle.com/datasets/rajumavinmar/finger-print-based-blood-group-dataset) 
 
-## 📂 Dataset  
-You can access the **Fingerprint Blood Group Dataset** used in this project here:  
-[🔗 Fingerprint Dataset](https://drive.google.com/drive/folders/1Y57vhyVfkDIjUTdhx9KH784glAziWgbD?usp=sharing)  
+![Screenshot 2025-03-05 002114](https://github.com/user-attachments/assets/764ddf3e-9f88-4734-802e-0e8d0f25f58d)
 
-## 📑 Deep Learning Models  
-The repository includes multiple model architectures in **PDF format**:  
-- **AlexNet** 
-- **SVM**  
-- **ResNet50** 
-- **VGG** 
-
-
-## 📂 Dataset Overview
-![Screenshot (274)](https://github.com/user-attachments/assets/55c0365d-ace9-48d4-8ea0-3dc4f2664431)
-
-The dataset consists of fingerprint images labeled with their corresponding **ABO/Rh blood groups**. **Data preprocessing** included **normalization and resizing** before training the model.
-
-## 🖥️ Screenshots
-### 🔹 Signup Page
+### Screenshots
+#### Signup Page
 ![Screenshot (278)](https://github.com/user-attachments/assets/f716115e-7875-4c65-b9cc-943c3faeb4cc)
 
+#### Predicting Result Page
+![Screenshot 2025-03-05 223335](https://github.com/user-attachments/assets/b5701d15-8837-46b8-aa13-c200625b0d35)
+![Screenshot 2025-03-05 223538](https://github.com/user-attachments/assets/40453f3f-d631-424b-82df-258843e445d8)
+![Screenshot 2025-03-05 223633](https://github.com/user-attachments/assets/63c77e96-f082-4c9c-9f53-02cf3b76cd3b)
 
-### 🔹 Predicting Result Page
-![Screenshot (277)](https://github.com/user-attachments/assets/30f9a4ad-fb25-4ab5-9ea0-95385f2735a7)
+###  Future Improvements
+- Expand the dataset for better generalization.
+- Experiment with other models for further accuracy improvements.
+- Deploy model in live environment
 
-![Screenshot (276)](https://github.com/user-attachments/assets/0ee143a2-b03c-4824-a67d-9b4c3a96bdd0)
+### Contact 
+#### Tushar Shinde  
+📧 [tusharshinde2250@gmail.com](mailto:tusharshinde2250@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/tushar-shinde-262335257/)
 
-## 📊 Model Performance
-| Metric            | VGG16  | AlexNet | ResNet50 | Hybrid Model |
-|------------------|--------|---------|---------|--------------|
-| Training Accuracy | 88.72% | 12.49%  | 61.19%  | 22.81%       |
-| Validation Accuracy | 89.50% | 12.49%  | 61.19%  | 22.81%       |
-| Test Accuracy     | 88.73% | N/A     | N/A     | N/A          |
-
-## 🔮 Future Scope
-- **Dataset Expansion**: Increasing dataset diversity to improve generalization.
-- **Model Optimization**: Using advanced architectures and data augmentation for better accuracy.
-- **Live Deployment**: Making the model available for real-time blood group classification in medical and forensic applications.
-
-## ⚠️ Limitations
-- Limited dataset size affects model generalization.
-- Some architectures (e.g., AlexNet, ResNet50) did not perform well.
-- Model has not been tested in real-world scenarios.
-
-## 📌 How to Run the Project
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/BGDUF.git
-cd BGDUF
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Flask app
-python app.py
-```
-The application will run on **http://127.0.0.1:5000/**
-
-## 📬 Contact
-For queries, reach out at **tusharshinde2250@gmail.com** or connect via [LinkedIn](https://www.linkedin.com/in/tushar-shinde-262335257/).
+#### Anjali Maske  
+📧 [aamaske50@gmail.com](mailto:aamaske50@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/anjali-maske/)
