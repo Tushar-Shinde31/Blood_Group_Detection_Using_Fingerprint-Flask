@@ -6,9 +6,8 @@ This project introduces a **non-invasive** approach to blood group prediction us
 ![home](https://github.com/user-attachments/assets/8479c8a4-98ef-4b6c-aac7-247df2eb3cd2)
 
 ## 🎥 Demo Video
-[![Watch the Demo](https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_LINK/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_YOUTUBE_VIDEO_LINK)
+[Watch the demo on YouTube](https://youtu.be/BCwa5xclfk0?si=_o926diqvEMfQuql)
 
-Click the image above or [watch the demo on YouTube](https://youtu.be/BCwa5xclfk0?si=_o926diqvEMfQuql).
 
 ---
 
