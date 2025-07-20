@@ -1,7 +1,7 @@
 # 🩸 Blood Group Prediction Using Fingerprint
 
 ## 📌 Project Overview
-This project introduces a **non-invasive** approach to blood group prediction using **fingerprint image processing** and **machine learning**. By leveraging **Convolutional Neural Networks (CNNs)**, it classifies fingerprint patterns into **eight common blood groups** (A+, A-, B+, B-, AB+, AB-, O+, O-), offering a **quick** and **accessible** alternative to traditional methods..
+This project introduces a **non-invasive** approach to blood group prediction using **fingerprint image processing** and **machine learning**. By leveraging **Convolutional Neural Networks (CNNs)**, it classifies fingerprint patterns into **eight common blood groups** (A+, A-, B+, B-, AB+, AB-, O+, O-), offering a **quick** and **accessible** alternative to traditional methods.
 
 ![home](https://github.com/user-attachments/assets/8479c8a4-98ef-4b6c-aac7-247df2eb3cd2)
 
